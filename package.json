@@ -1,0 +1,21 @@
+{
+  "name": "WorkerThreadsvsAddons",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "run": "node ./runners/run/index.js",
+    "runChildProcess": "node ./runners/runChildProcess/index.js",
+    "runCluster": "node ./runners/runCluster/index.js",
+    "runWorkerThreads": "node ./runners/runWorkerThreads/index.js"
+  },
+  "gypfile": true,
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "microseconds": "^0.2.0",
+    "murmurhash-native": "^3.4.1",
+    "murmurhash3js": "^3.0.1"
+  }
+}
