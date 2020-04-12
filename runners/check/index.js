@@ -2,7 +2,7 @@ const microseconds = require('microseconds');
 
 const file = require('../../helpers/file/index');
 
-const index = () => {
+const check = () => {
   const result = [];
 
   const beforeAll = microseconds.now();
@@ -17,4 +17,4 @@ const index = () => {
   return afterAll - beforeAll;
 };
 
-module.exports = index;
+module.exports = check;
