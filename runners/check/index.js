@@ -6,7 +6,7 @@ const index = () => {
   const result = [];
 
   const beforeAll = microseconds.now();
-  for (let i = 0; i < 200000; i++) {
+  for (let i = 0; i < 1400000; i++) {
     const before = microseconds.now();
     const hash = file[i];
     const after = before + microseconds.since(before);

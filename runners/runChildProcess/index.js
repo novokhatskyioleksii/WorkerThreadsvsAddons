@@ -50,4 +50,6 @@ const hash128x64CChildProcess = require('./hash128x64CChildProcess');
 
   console.log(`C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
   console.log(`JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
+
+  process.exit();
 })();

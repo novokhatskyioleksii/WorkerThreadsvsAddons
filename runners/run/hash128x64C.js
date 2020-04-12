@@ -8,7 +8,7 @@ const hash128x64C = () => {
   const result = [];
 
   const beforeAll = microseconds.now();
-  for (let i = 0; i < 1600000; i++) {
+  for (let i = 0; i < 1400000; i++) {
     const before = microseconds.now();
     const hash = murmurHash128x64(file[i]);
     const after = before + microseconds.since(before);

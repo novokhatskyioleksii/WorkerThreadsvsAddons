@@ -45,6 +45,8 @@ const mainThread = () => new Promise((resolve, reject) => {
 
     console.log(`C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
     console.log(`JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
+
+    process.exit();
   } else {
     hash128x64JSWorkerThreads();
     parentPort.postMessage(workerData.processNumber)
