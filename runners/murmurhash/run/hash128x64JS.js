@@ -2,7 +2,7 @@ const murmurHash3 = require('murmurhash3js');
 
 const microseconds = require('microseconds');
 
-const file = require('../../helpers/file');
+const file = require('../../../helpers/file');
 
 const hash128x64JS = () => {
   const result = [];

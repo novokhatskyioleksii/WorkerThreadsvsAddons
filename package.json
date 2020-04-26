@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "run": "node ./runners/run/index.js",
-    "runChildProcess": "node ./runners/runChildProcess/index.js",
-    "runCluster": "node ./runners/runCluster/index.js",
-    "runWorkerThreads": "node ./runners/runWorkerThreads/index.js"
+    "run": "node ./runners/murmurhash/run/index.js",
+    "runChildProcess": "node ./runners/murmurhash/runChildProcess/index.js",
+    "runCluster": "node ./runners/murmurhash/runCluster/index.js",
+    "runWorkerThreads": "node ./runners/murmurhash/runWorkerThreads/index.js"
   },
   "gypfile": true,
   "main": "index.js",

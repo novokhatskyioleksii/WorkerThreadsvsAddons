@@ -1,6 +1,6 @@
 const murmurHash3 = require('murmurhash3js');
 
-const file = require('../../helpers/file');
+const file = require('../../../helpers/file');
 
 const hash128x64JS = (processNumber) => {
   const start = 200000 * processNumber;

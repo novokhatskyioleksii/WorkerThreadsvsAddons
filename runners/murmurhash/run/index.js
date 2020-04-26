@@ -1,6 +1,6 @@
-const file = require('../../helpers/file');
+const file = require('../../../helpers/file');
 
-const { filterOutliers, getMean, getSD } = require('../../helpers/calc');
+const { filterOutliers, getMean, getSD } = require('../../../helpers/calc');
 
 const check = require('../check');
 const hash128x64C = require('./hash128x64C');

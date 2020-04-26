@@ -2,7 +2,7 @@ const microseconds = require('microseconds');
 
 const { Worker, isMainThread, parentPort, workerData } = require('worker_threads');
 
-const file = require('../../helpers/file');
+const file = require('../../../helpers/file');
 
 const hash128x64JSWorkerThreads = require('./hash128x64JSWorkerThreads');
 

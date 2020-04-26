@@ -1,6 +1,6 @@
 const microseconds = require('microseconds');
 
-const file = require('../../helpers/file/index');
+const file = require('../../../helpers/file');
 
 const check = () => {
   const result = [];

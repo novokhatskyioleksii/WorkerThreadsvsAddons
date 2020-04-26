@@ -1,7 +1,7 @@
 const microseconds = require('microseconds');
 const { spawn } = require('child_process');
 
-const file = require('../../helpers/file');
+const file = require('../../../helpers/file');
 
 const hash128x64CChildProcess = require('./hash128x64CChildProcess');
 
@@ -17,7 +17,7 @@ const hash128x64CChildProcess = require('./hash128x64CChildProcess');
   afterC = beforeC + microseconds.since(beforeC);
 
   const hash128x64JSChildProcess = (i) => new Promise((resolve, reject) => {
-    const hash128x64JSChildProcess = spawn('node', ['./runners/runChildProcess/hash128x64JSChildProcess.js', i]);
+    const hash128x64JSChildProcess = spawn('node', ['./runners/murmurhash/runChildProcess/hash128x64JSChildProcess.js', i]);
 
     hash128x64JSChildProcess.stdout.on('data', data => {
       console.log(data.toString());

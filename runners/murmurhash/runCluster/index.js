@@ -2,7 +2,7 @@ const microseconds = require('microseconds');
 
 const cluster = require('cluster');
 
-const file = require('../../helpers/file');
+const file = require('../../../helpers/file');
 
 const hash128x64CCluster = require('./hash128x64CCluster');
 const hash128x64JSCluster = require('./hash128x64JSCluster');
