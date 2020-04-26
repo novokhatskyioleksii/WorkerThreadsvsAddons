@@ -43,8 +43,8 @@ const mainThread = () => new Promise((resolve, reject) => {
     const totalC = afterC - beforeC;
     const totalJS = await mainThread();
 
-    console.log(`C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
-    console.log(`JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
+    console.log(`(bcrypt) C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
+    console.log(`(bcrypt) JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
 
     process.exit();
   } else {

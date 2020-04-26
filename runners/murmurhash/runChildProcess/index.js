@@ -48,8 +48,8 @@ const hash128x64CChildProcess = require('./hash128x64CChildProcess');
   const totalC = afterC - beforeC;
   const totalJS = afterJS - beforeJS;
 
-  console.log(`C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
-  console.log(`JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
+  console.log(`(murmurhash) C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
+  console.log(`(murmurhash) JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
 
   process.exit();
 })();

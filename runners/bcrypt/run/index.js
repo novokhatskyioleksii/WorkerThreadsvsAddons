@@ -20,10 +20,10 @@ const meanJS = getMean(filteredJS);
 const SDC = getSD(filteredC);
 const SDJS = getSD(filteredJS);
 
-console.log(`C++ Total: ${((totalC - checkTime) / 1000).toFixed(2)} milliseconds`);
-console.log(`JS Total: ${((totalJS - checkTime) / 1000).toFixed(2)} milliseconds`);
+console.log(`(bcrypt) C++ Total: ${((totalC - checkTime) / 1000).toFixed(2)} milliseconds`);
+console.log(`(bcrypt) JS Total: ${((totalJS - checkTime) / 1000).toFixed(2)} milliseconds`);
 
-console.log(`C++: ${meanC.toFixed(2)} +- ${SDC.toFixed(2)} microseconds`);
-console.log(`JS: ${meanJS.toFixed(2)} +- ${SDJS.toFixed(2)} microseconds`);
+console.log(`(bcrypt) C++: ${(meanC / 1000).toFixed(2)} +- ${(SDC / 1000).toFixed(2)} milliseconds`);
+console.log(`(bcrypt) JS: ${(meanJS / 1000).toFixed(2)} +- ${(SDJS / 1000).toFixed(2)} milliseconds`);
 
 process.exit();

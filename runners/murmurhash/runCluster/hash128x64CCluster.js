@@ -1,4 +1,4 @@
-const { murmurHash128x64 } = require("murmurhash-native");
+const { murmurHash128x64 } = require('murmurhash-native');
 
 const file = require('../../../helpers/file');
 

@@ -48,8 +48,8 @@ const hashBcryptCChildProcess = require('./hashBcryptCChildProcess');
   const totalC = afterC - beforeC;
   const totalJS = afterJS - beforeJS;
 
-  console.log(`C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
-  console.log(`JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
+  console.log(`(bcrypt) C++ Total: ${(totalC / 1000).toFixed(2)} milliseconds`);
+  console.log(`(bcrypt) JS Total: ${(totalJS / 1000).toFixed(2)} milliseconds`);
 
   process.exit();
 })();
