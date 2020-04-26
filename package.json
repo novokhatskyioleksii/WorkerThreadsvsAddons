@@ -6,7 +6,11 @@
     "run": "node ./runners/murmurhash/run/index.js",
     "runChildProcess": "node ./runners/murmurhash/runChildProcess/index.js",
     "runCluster": "node ./runners/murmurhash/runCluster/index.js",
-    "runWorkerThreads": "node ./runners/murmurhash/runWorkerThreads/index.js"
+    "runWorkerThreads": "node ./runners/murmurhash/runWorkerThreads/index.js",
+    "runBcrypt": "node ./runners/bcrypt/run/index.js",
+    "runBcryptChildProcess": "node ./runners/bcrypt/runChildProcess/index.js",
+    "runBcryptCluster": "node ./runners/bcrypt/runCluster/index.js",
+    "runBcryptWorkerThreads": "node ./runners/bcrypt/runWorkerThreads/index.js"
   },
   "gypfile": true,
   "main": "index.js",
@@ -14,6 +18,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
     "microseconds": "^0.2.0",
     "murmurhash-native": "^3.4.1",
     "murmurhash3js": "^3.0.1"

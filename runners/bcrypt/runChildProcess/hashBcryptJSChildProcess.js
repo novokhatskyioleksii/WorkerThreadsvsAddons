@@ -1,0 +1,14 @@
+const bcrypt = require('bcryptjs');
+
+const file = require('../../../helpers/file');
+
+const processNumber = Number(process.argv[2]);
+const start = 20 * processNumber;
+const end = start + 20;
+
+(() => {
+  for (let i = start; i < end; i++) {
+    const salt = bcrypt.genSaltSync(10);
+    const hash = bcrypt.hashSync(file[i], salt);
+  }
+})();
