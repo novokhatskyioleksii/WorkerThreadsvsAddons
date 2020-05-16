@@ -10,7 +10,11 @@
     "runBcrypt": "node ./runners/bcrypt/run/index.js",
     "runBcryptChildProcess": "node ./runners/bcrypt/runChildProcess/index.js",
     "runBcryptCluster": "node ./runners/bcrypt/runCluster/index.js",
-    "runBcryptWorkerThreads": "node ./runners/bcrypt/runWorkerThreads/index.js"
+    "runBcryptWorkerThreads": "node ./runners/bcrypt/runWorkerThreads/index.js",
+    "runBcryptAsync": "node ./runners/bcryptAsync/run/index.js",
+    "runBcryptAsyncChildProcess": "node ./runners/bcryptAsync/runChildProcess/index.js",
+    "runBcryptAsyncCluster": "node ./runners/bcryptAsync/runCluster/index.js",
+    "runBcryptAsyncWorkerThreads": "node ./runners/bcryptAsync/runWorkerThreads/index.js"
   },
   "gypfile": true,
   "main": "index.js",
