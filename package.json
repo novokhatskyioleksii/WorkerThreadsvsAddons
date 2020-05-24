@@ -14,7 +14,11 @@
     "runBcryptAsync": "node ./runners/bcryptAsync/run/index.js",
     "runBcryptAsyncChildProcess": "node ./runners/bcryptAsync/runChildProcess/index.js",
     "runBcryptAsyncCluster": "node ./runners/bcryptAsync/runCluster/index.js",
-    "runBcryptAsyncWorkerThreads": "node ./runners/bcryptAsync/runWorkerThreads/index.js"
+    "runBcryptAsyncWorkerThreads": "node ./runners/bcryptAsync/runWorkerThreads/index.js",
+    "runBcryptAsyncThreadPoolSize": "UV_THREADPOOL_SIZE=8 node ./runners/bcryptAsync/run/index.js",
+    "runBcryptAsyncChildProcessThreadPoolSize": "UV_THREADPOOL_SIZE=8 node ./runners/bcryptAsync/runChildProcess/index.js",
+    "runBcryptAsyncClusterThreadPoolSize": "UV_THREADPOOL_SIZE=8 node ./runners/bcryptAsync/runCluster/index.js",
+    "runBcryptAsyncWorkerThreadsThreadPoolSize": "UV_THREADPOOL_SIZE=8 node ./runners/bcryptAsync/runWorkerThreads/index.js"
   },
   "gypfile": true,
   "main": "index.js",
