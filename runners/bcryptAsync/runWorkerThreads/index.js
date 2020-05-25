@@ -48,7 +48,7 @@ const mainThread = () => new Promise((resolve, reject) => {
 
     process.exit();
   } else {
-    await hashBcryptJSWorkerThreads();
+    await hashBcryptJSWorkerThreads(workerData.processNumber);
     parentPort.postMessage(workerData.processNumber);
   }
 })();

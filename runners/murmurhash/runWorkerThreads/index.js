@@ -48,7 +48,7 @@ const mainThread = () => new Promise((resolve, reject) => {
 
     process.exit();
   } else {
-    hash128x64JSWorkerThreads();
+    hash128x64JSWorkerThreads(workerData.processNumber);
     parentPort.postMessage(workerData.processNumber)
   }
 })();
