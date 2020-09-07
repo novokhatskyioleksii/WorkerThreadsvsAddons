@@ -6,7 +6,7 @@ const file = require('../../../helpers/file');
 const hashBcryptCChildProcess = require('./hashBcryptCChildProcess');
 
 (async () => {
-  const i = 0;
+  let count = 0;
   let beforeC;
   let afterC;
   let beforeJS;
@@ -28,8 +28,8 @@ const hashBcryptCChildProcess = require('./hashBcryptCChildProcess');
     });
 
     hashBcryptJSChildProcess.stdout.on('close', () => {
-      i++;
-      if (i === 7) afterJS = beforeJS + microseconds.since(beforeJS);
+      count++;
+      if (count === 7) afterJS = beforeJS + microseconds.since(beforeJS);
       resolve();
     });
   });
