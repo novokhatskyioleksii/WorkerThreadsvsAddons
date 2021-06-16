@@ -22,7 +22,11 @@
     "runXlsx": "node ./runners/xlsx/run/index.js",
     "runXlsxChildProcess": "node ./runners/xlsx/runChildProcess/index.js",
     "runXlsxCluster": "node ./runners/xlsx/runCluster/index.js",
-    "runXlsxWorkerThreads": "node ./runners/xlsx/runWorkerThreads/index.js"
+    "runXlsxWorkerThreads": "node ./runners/xlsx/runWorkerThreads/index.js",
+    "runArgon2": "node ./runners/argon2/run/index.js",
+    "runArgon2ChildProcess": "node ./runners/argon2/runChildProcess/index.js",
+    "runArgon2Cluster": "node ./runners/argon2/runCluster/index.js",
+    "runArgon2WorkerThreads": "node ./runners/argon2/runWorkerThreads/index.js"
   },
   "gypfile": true,
   "main": "index.js",
@@ -30,8 +34,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "argon2-browser": "^1.18.0",
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
+    "hash-wasm": "^4.7.0",
     "microseconds": "^0.2.0",
     "murmurhash-native": "^3.4.1",
     "murmurhash3js": "^3.0.1",
