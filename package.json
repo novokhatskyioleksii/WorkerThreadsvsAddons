@@ -47,7 +47,7 @@
     "microseconds": "^0.2.0",
     "murmurhash-native": "^3.4.1",
     "murmurhash3js": "^3.0.1",
-    "xlsx": "^0.16.6",
+    "xlsx": "^0.17.0",
     "xlsx-util": "0.0.16"
   }
 }
